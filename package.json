@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=staging node index.js",
+    "dev":"NODE_ENV=development nodemon index.js",
+    "test": "NODE_ENV=TEST_RUNNER mocha tests --recursive"
   },
   "keywords": [],
   "author": "",
